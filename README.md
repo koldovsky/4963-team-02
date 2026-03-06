@@ -36,3 +36,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Shopiak Khrystyna
 - Polina Petrishyna
 - Maksym Hladiak
+- Uliana Trukhan
