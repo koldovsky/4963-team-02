@@ -1,0 +1,17 @@
+body {
+    background-color: #151515; /* Темний фон як на макеті */
+    color: #ffffff;
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1.project-title { 
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: lowercase;
+    text-align: center;
+
+    color: #ffffff;
+}
