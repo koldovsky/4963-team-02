@@ -1,12 +1,3 @@
-:root {
-  --color-primary: #e25d1f;
-  --color-white: #ffffff;
-  --color-light-gray: #cacaca;
-  --color-dark-gray: #575757;
-  --color-pink: #e21a59;
-  --color-black: #000000;
-}
-
 .news {
   position: relative;
   min-width: 320px;
@@ -28,7 +19,7 @@
 }
 
 .news__title--main {
-  color: var(--color-white);
+  color: var(--color-text-light);
   font-family: "Russo One", sans-serif;
   font-size: 34px;
   text-align: center;
@@ -85,7 +76,7 @@
 }
 
 .news__card-title {
-  color: var(--color-white);
+  color: var(--color-text-light);
   font-family: "Russo One", sans-serif;
   font-size: 22px;
   letter-spacing: normal;
@@ -113,7 +104,7 @@
   box-sizing: border-box;
   width: 26px;
   height: 26px;
-  color: var(--color-white);
+  color: var(--color-text-light);
 }
 
 .news__description {

@@ -15,6 +15,11 @@
     --color-text-light: #FFFFFF;
     --font-eyebrow: 'Inter', sans-serif;
     --font-title: 'Russo One', sans-serif;
+    --color-primary: #e25d1f;
+    --color-light-gray: #cacaca;
+    --color-dark-gray: #575757;
+    --color-pink: #e21a59;
+    --color-black: #000000;
 }
 
 .container {
