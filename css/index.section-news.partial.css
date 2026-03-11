@@ -1,0 +1,129 @@
+:root {
+  --color-primary: #e25d1f;
+  --color-white: #ffffff;
+  --color-light-gray: #cacaca;
+  --color-dark-gray: #575757;
+  --color-pink: #e21a59;
+  --color-black: #000000;
+}
+
+.news {
+  position: relative;
+  min-width: 320px;
+  background-image: url(https://res2.weblium.site/res/68874d76d29d403c14fd581e/68889b1fe962ad1abbcb6270?nowebp);
+  margin: 0;
+  padding: 90px 0;
+
+  
+}
+.news__text {
+  margin: 50px 0 0;
+  padding: 0 15px;
+}
+.news__subtitle--container-text {
+  color: var(--color-primary);
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+
+.news__title--main {
+  color: var(--color-white);
+  font-family: "Russo One", sans-serif;
+  font-size: 34px;
+  text-align: center;
+  word-break: break-word;
+  
+}
+
+.news__subtitle {
+  color: var(--color-light-gray);
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  
+}
+
+.news__subtitle--item {
+  color: var(--color-pink);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+.news__image {
+  display: block;
+  width: 272px;
+  height: 176.792px;
+  margin-bottom: 16px;
+  margin: auto;
+}
+
+.news__day {
+  color: var(--color-dark-gray);
+  font-family: Inter, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 0;
+}
+
+.news__date {
+  display: flex;
+  flex-direction: column;
+}
+
+.news__month {
+  color: var(--color-light-gray);
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+}
+
+.news__card-title {
+  color: var(--color-white);
+  font-family: "Russo One", sans-serif;
+  font-size: 22px;
+  letter-spacing: normal;
+  text-align: left;
+  text-wrap: wrap;
+  margin: 0;
+}
+
+.news__item {
+  padding: 39px 43px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -7.5px;
+  padding: 0;
+  border: 0;
+}
+
+.news__icon {
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  color: var(--color-white);
+}
+
+.news__description {
+  color: var(--color-light-gray);
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  height: 214.125px;
+  letter-spacing: normal;
+  text-align: left;
+  text-wrap: wrap;
+  margin: 0;
+}
