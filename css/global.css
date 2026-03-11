@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Inter:wght@400;700&display=swap");
+
+:root {
+  --background-color: #151515;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #cacaca;
+  --tertiary-text-color: #575757;
+  --light-accent-color: #e25d1f;
+  --brand-color: #e21a59;
+  --font-primary: "Russo One", sans-serif; /* для заголовків */
+  --font-secondary: "Inter", sans-serif; /* для тексту */
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
