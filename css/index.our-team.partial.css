@@ -115,7 +115,7 @@
         .our-team__card-role {
             font-size: 16px;
             font-family: var(--font-title);
-            color: var(--color-card-role);
+            color: var(--brand-color);
             text-transform: lowercase;
             font-weight: 200;
             letter-spacing: 1px;
