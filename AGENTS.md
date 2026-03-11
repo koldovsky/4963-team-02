@@ -358,12 +358,14 @@ Example:
 
 Preferred image formats:
 
+
+
 ```id="s29"
 webp
 svg
 ```
 
-Avoid heavy images:
+Avoid heavy images but in general PNG and JPG image formats are allowed:
 
 ```id="s30"
 large jpg
