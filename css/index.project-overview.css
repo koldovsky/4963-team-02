@@ -1,0 +1,142 @@
+.project-overview {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  width: 100%;
+
+  /* Спільний стиль для описів (як Industry/Services) */
+  .project-overview__description-text,
+  .project-overview__desc {
+    font-family: var(--font-secondary);
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  .project-overview__hero {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 100px;
+    /* ОНОВЛЕНО НАЗВУ КАРТИНКИ */
+    background: linear-gradient(rgba(21, 21, 21, 0.75), rgba(21, 21, 21, 0.75)), 
+                url("../img/project-overview-bg.png") center/cover no-repeat;
+  }
+
+  /* Стрілка: максимально вгору */
+  .project-overview__media {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 5;
+    
+    .project-overview__link {
+      color: var(--primary-text-color);
+      transition: color 0.2s;
+      &:hover { color: var(--brand-color); }
+    }
+  }
+
+  /* Сітка контенту */
+  .project-overview__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 100px; /* Відступ тексту від стрілки */
+
+    .project-overview__header { flex: 0 0 50%; }
+    .project-overview__content { flex: 0 0 45%; }
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      .project-overview__header, .project-overview__content { flex: 1 1 100%; }
+    }
+  }
+
+  /* Заголовки (Нижній регістр) */
+  .project-overview__title,
+  .accordion__header,
+  .tools-tech__header {
+    font-family: var(--font-primary) !important;
+    color: var(--primary-text-color) !important;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+
+  .project-overview__title {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  /* Jednakowy розмір для 01 та 02 */
+  .accordion__header, .tools-tech__header {
+    font-size: 1.5rem; 
+    line-height: 1.2;
+  }
+
+  .project-overview__label {
+    display: block;
+    color: var(--light-accent-color) !important;
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .project-overview__detail-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 6px;
+    .project-overview__term {
+      font-weight: 700;
+      color: var(--primary-text-color);
+    }
+  }
+
+  /* Рожеві цифри */
+  .accent-num {
+    color: var(--brand-color) !important;
+    font-family: var(--font-primary);
+    margin-right: 0.5rem;
+  }
+
+  .accordion, .tools-tech {
+    border-top: 1px solid var(--tertiary-text-color);
+    padding: 2rem 0;
+  }
+
+  .project-overview__testimonial-section {
+    padding: 120px 0;
+    .testimonial {
+      display: flex;
+      align-items: center;
+      gap: 120px;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+      }
+
+      .testimonial__quote-img { width: 300px; opacity: 0.15; }
+      
+      .testimonial__text {
+        max-width: 820px;
+        font-size: 24px;
+        line-height: 1.35;
+        margin-bottom: 30px;
+      }
+
+      .testimonial__author {
+        font-family: var(--font-secondary);
+        color: var(--primary-text-color);
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-style: normal;
+      }
+    }
+  }
+}
