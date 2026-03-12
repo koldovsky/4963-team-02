@@ -1,4 +1,4 @@
-# AGENTS.md
+[# AGENTS.md
 
 This file defines **coding standards, architecture rules, and generation guidelines** for AI agents working in this repository.
 
@@ -491,3 +491,4 @@ This repository follows a **strict but simple architecture**:
 * simple Git workflow
 
 AI agents must follow these rules when generating or modifying code.
+](https://github.com/koldovsky/htmx-template-autocheck/blob/main/AGENTS.md)
