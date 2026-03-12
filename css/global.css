@@ -15,21 +15,27 @@
   --tertiary-text-color: #575757;
   --light-accent-color: #e25d1f;
   --brand-color: #e21a59;
+  --button-bg-color: linear-gradient(90deg, #e21a59 0%, #e25d1f 100%);
   --font-primary: "Russo One", sans-serif;
   --font-secondary: "Inter", sans-serif;
 
-  --color-eyebrow: #e25d1f;
-  --color-text-light: #ffffff;
-  --font-eyebrow: "Inter", sans-serif;
-  --font-title: "Russo One", sans-serif;
-  --color-primary: #e25d1f;
-  --color-light-gray: #cacaca;
-  --color-dark-gray: #575757;
-  --color-pink: #e21a59;
+  --color-eyebrow: var(--light-accent-color);
+  --color-text-light: var(--primary-text-color);
+  --font-eyebrow: var(--font-secondary);
+  --font-title: var(--font-primary);
+  --color-primary: var(--light-accent-color);
+  --color-light-gray: var(--secondary-text-color);
+  --color-dark-gray: var(--tertiary-text-color);
+  --color-pink: var(--brand-color);
   --color-black: #000000;
+}
 
-  background-color: var(--background-color);
+html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 img {
@@ -39,6 +45,6 @@ img {
 
 .container {
   max-width: 1200px;
-  margin: auto;
-  padding: 0 32px;
+  margin: 0 auto;
+  padding: 0 15px;
 }

@@ -1,4 +1,5 @@
 :root {
+  --header-height: 85px;
   --bg-dark: #000000;
   --text-light: #ffffff;
   --accent: #ff5e00;       
@@ -10,17 +11,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 85px;
+  height: var(--header-height);
   width: 100%;
   z-index: 1000;
-  background: var(--bg-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: transparent;
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.08); */
 }
 
 .header__container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,12 +95,12 @@
 .footer {
   background: var(--bg-dark);
   color: var(--text-light);
-  padding: 5rem 2rem 3rem;
+  padding: 5rem 15px 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer__top {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto 4rem;
   display: flex;
   justify-content: space-between;
