@@ -1,94 +1,147 @@
 .news {
-  position: relative;
-  min-width: 320px;
-  background-image: url(https://res2.weblium.site/res/68874d76d29d403c14fd581e/68889b1fe962ad1abbcb6270?nowebp);
-  margin: 0;
-  padding: 90px 0;
+  background-image: url(../img/dark-banner.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__main {
+  margin: 0 auto;
+  padding: 90px 20px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-width: 1200px;
 
-  
+  @media (min-width: 768px) {
+    padding: 90px 40px;
+  }
 }
 .news__text {
   margin: 50px 0 0;
   padding: 0 15px;
+
+  @media (min-width: 768px) {
+    margin: 0 0 0 auto;
+    flex: 0 1 380px;
+    max-width: 380px;
+  }
 }
+
+.news__text--main {
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+.news__container {
+  max-width: 1112px;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .news__container {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
 .news__subtitle--container-text {
   color: var(--color-primary);
   font-family: Inter, sans-serif;
-  font-size: 11px;
   text-align: center;
+  font-size: 11px;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .news__title--main {
-  color: var(--color-text-light);
+  color: var(--color-description);
   font-family: "Russo One", sans-serif;
-  font-size: 34px;
   text-align: center;
   word-break: break-word;
-  
+  font-size: clamp(34px, 4vw, 42px);
 }
 
 .news__subtitle {
-  color: var(--color-light-gray);
+  color: var(--color-description);
   font-family: Inter, sans-serif;
-  font-size: 17px;
   text-align: center;
-  
+  font-size: 17px;
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
 }
 
 .news__subtitle--item {
-  color: var(--color-pink);
+  color: var(--color-subtitle);
   font-family: Inter, sans-serif;
-  font-size: 14px;
   text-align: center;
+  font-size: clamp(14px, 4vw, 15px);
 
+  @media (min-width: 768px) {
+    text-align: right;
+  }
 }
 
 .news__image {
   display: block;
-  width: 272px;
-  height: 176.792px;
-  margin-bottom: 16px;
-  margin: auto;
+  width: 100%;
+  max-width: 508px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }
 
 .news__day {
-  color: var(--color-dark-gray);
+  color: var(--color-date-day);
   font-family: Inter, sans-serif;
-  font-size: 48px;
+  font-size: clamp(28px, 4vw, 48px);
   font-weight: 700;
   line-height: 48px;
-  letter-spacing: normal;
   text-align: center;
   margin: 0;
+  padding: 10px;
 }
 
 .news__date {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .news__month {
-  color: var(--color-light-gray);
+  color: var(--color-description);
   font-family: Inter, sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   text-align: center;
   margin: 0;
 }
 
 .news__card-title {
-  color: var(--color-text-light);
+  color: var(--color-description);
   font-family: "Russo One", sans-serif;
-  font-size: 22px;
-  letter-spacing: normal;
+  font-size: clamp(22px, 4vw, 26px);
   text-align: left;
   text-wrap: wrap;
   margin: 0;
+  padding: 10px;
 }
 
 .news__item {
   padding: 39px 43px;
   display: flex;
-  flex-direction: row;
   margin: 0;
 }
 
@@ -96,25 +149,58 @@
   display: flex;
   flex-direction: column;
   margin: 0 -7.5px;
-  padding: 0;
-  border: 0;
+  gap: 40px;
+
+  @media (min-width: 768px) {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+  }
 }
 
 .news__icon {
   box-sizing: border-box;
   width: 26px;
   height: 26px;
-  color: var(--color-text-light);
+  color: var(--color-description);
 }
 
 .news__description {
-  color: var(--color-light-gray);
+  color: var(--color-description);
   font-family: Inter, sans-serif;
   font-size: 17px;
-  font-weight: 400;
-  height: 214.125px;
-  letter-spacing: normal;
   text-align: left;
   text-wrap: wrap;
   margin: 0;
+  padding: 15px;
+}
+.news__card--first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1112px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+.news__card--second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1112px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 }
