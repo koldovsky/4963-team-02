@@ -7,7 +7,7 @@
   text-align: center;
 
 .index-cta__button {
-    position: relative;
+  position: relative;
   width: 160px;
   height: 160px;
   padding: 0;
@@ -78,25 +78,32 @@
     font-size: 2.5rem;
     color: var(--primary-text-color);
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 76px;
+    }
   }
 }
 
 .index-cta__contacts {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 20px;
 
   .index-cta__contact {
     text-decoration-style: solid;
-    .index-cta__label {
       font-size: 22px;
+
+     @media (min-width: 768px) {
+      font-size:26px;
+    }
+    .index-cta__label {
       color: var(--primary-text-color);
       margin-bottom: 5px;
     }
     .index-cta__link {
-      font-size: 22px;
       color: var(--light-accent-color);
       text-decoration: underline;
       transition: color 0.3s ease;
@@ -104,5 +111,6 @@
     &:hover {
       color: var(--brand-color);
     }
+  }
   }
 }
