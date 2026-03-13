@@ -1,0 +1,93 @@
+<section class="popup-brief" id="project-brief-popup" aria-hidden="true" hidden>
+  <div class="popup-brief__backdrop" aria-hidden="true" data-popup-close></div>
+  <div
+    class="popup-brief__dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="popup-brief-title"
+    aria-describedby="popup-brief-text"
+  >
+    <button
+      class="popup-brief__close"
+      type="button"
+      aria-label="Close popup"
+      data-popup-close
+    ></button>
+
+    <p class="popup-brief__eyebrow">01 // let's work</p>
+    <h2 class="popup-brief__title" id="popup-brief-title">
+      let&rsquo;s bring your project to life
+    </h2>
+    <p class="popup-brief__text" id="popup-brief-text">
+      Tell us a bit about your idea and we'll get back to you within 1-2 business
+      days. We're excited to hear from you!
+    </p>
+
+    <form class="popup-brief__form">
+      <label class="popup-brief__field">
+        <span class="popup-brief__label">your name*</span>
+        <input
+          class="popup-brief__input"
+          type="text"
+          name="name"
+          placeholder="your name*"
+          autocomplete="name"
+          required
+        />
+      </label>
+
+      <label class="popup-brief__field">
+        <span class="popup-brief__label">phone number*</span>
+        <input
+          class="popup-brief__input"
+          type="tel"
+          name="phone"
+          placeholder="phone number*"
+          autocomplete="tel"
+          required
+        />
+      </label>
+
+      <label class="popup-brief__field">
+        <span class="popup-brief__label">email*</span>
+        <input
+          class="popup-brief__input"
+          type="email"
+          name="email"
+          placeholder="email*"
+          autocomplete="email"
+          required
+        />
+      </label>
+
+      <label class="popup-brief__field">
+        <span class="popup-brief__label">project type</span>
+        <input
+          class="popup-brief__input"
+          type="text"
+          name="project-type"
+          placeholder="project type"
+        />
+      </label>
+
+      <label class="popup-brief__field popup-brief__field--textarea">
+        <span class="popup-brief__label">message / brief</span>
+        <textarea
+          class="popup-brief__input popup-brief__input--textarea"
+          name="message"
+          placeholder="message / brief"
+        ></textarea>
+      </label>
+
+      <button class="popup-brief__submit" type="submit">
+        <span>send now</span>
+        <img
+          class="popup-brief__submit-icon"
+          src="img/arrow.svg"
+          alt=""
+          aria-hidden="true"
+        />
+      </button>
+    </form>
+  </div>
+</section>
