@@ -103,7 +103,7 @@
 }
 
 .mission__cta-button {
-  background: linear-gradient(90deg, #e25d1f 0%, #e21a59 100%);
+  background: var(--button-bg-color);
   border-radius: 8px;
   cursor: pointer;
   padding: 12px 20px;
