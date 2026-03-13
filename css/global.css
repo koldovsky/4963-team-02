@@ -18,6 +18,12 @@
   --button-bg-color: linear-gradient(90deg, #e21a59 0%, #e25d1f 100%);
   --font-primary: "Russo One", sans-serif;
   --font-secondary: "Inter", sans-serif;
+  --header-height: 85px;
+
+  --bg-dark: var(--background-color);
+  --text-light: var(--primary-text-color);
+  --accent: var(--light-accent-color);
+  --accent-hover: var(--brand-color);
 
   --color-eyebrow: var(--light-accent-color);
   --color-text-light: var(--primary-text-color);
