@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projects</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href=".github/css/projects.css" />
     <script
@@ -14,18 +15,38 @@
   </head>
   <body>
     <header class="header">
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">About us</a>
+              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link disabled" aria-disabled="true">Team</a>
+              <a class="nav-link disabled" aria-disabled="true">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-<main class="Projects-container">
+    <main class="Projects-container">
     <section class="projects-hero">
         <h1 class="project-title">projects</h1>
         <nav class="breadcrumb">
-            <button href="index.html">HOME</button>
+            <a href="index.html" class="breadcrumb__link">HOME</a>
             <span class="separator">></span>
             <span class="current">PROJECTS</span>
         </nav>
@@ -33,7 +54,7 @@
     <section class="projects grid">
         <article class="project-item">
             <div class="project-image">
-                 <img src=".github/img_projects/img1.jpg" width="300" alt="Phone screen showing the redesigned Shot Agency website">
+                 <img src=".github/img_projects/img1.jpg" alt="Phone screen showing the redesigned Shot Agency website">
             </div>
             <div class="project-info">
                 <h3>Shot Website Redesign</h3>
@@ -43,7 +64,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img2.jpg" width="300" alt="Journal with man, demonstrating new GlowUp website design">
+                <img src=".github/img_projects/img2.jpg" alt="Journal with man, demonstrating new GlowUp website design">
             </div>
             <div class="project-info">
                 <h3>GlowUp Website Redesign</h3>
@@ -55,7 +76,7 @@
     <section class="projects-grid-small">
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img3.jpg" width="300" alt="Two cans of Hard Seltzer .ETH drink">
+                <img src=".github/img_projects/img3.jpg" alt="Two cans of Hard Seltzer .ETH drink">
             </div>
             <div class="project-info">
                 <h3>Hard Seltzer .ETH Launch</h3>
@@ -65,7 +86,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img4.jpg" width="300" alt="T-shirt with number 3 printed on it">
+                <img src=".github/img_projects/img4.jpg" alt="T-shirt with number 3 printed on it">
             </div>
             <div class="project-info">
                 <h3>Kiikii App UI/UX</h3>
@@ -75,7 +96,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img5.jpg" width="300" alt="Two sponges from Inn Beauty">
+                <img src=".github/img_projects/img5.jpg" alt="Two sponges from Inn Beauty">
             </div>
             <div class="project-info">
                 <h3>Inn Beauty Website Design</h3>
@@ -88,7 +109,7 @@
     <section class="projects-grid-small">
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img6.jpg" width="300" alt="PNG journal on a Big board">
+                <img src=".github/img_projects/img6.jpg" alt="PNG journal on a Big board">
             </div>
             <div class="project-info">
                 <h3>PNG Journal Digital Edition</h3>
@@ -98,7 +119,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img7.jpg" width="300" alt="3 toothpastes from Before brand">
+                <img src=".github/img_projects/img7.jpg" alt="3 toothpastes from Before brand">
             </div>
             <div class="project-info">
                 <h3>Before Toothpaste Website Redesign</h3>
@@ -108,7 +129,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img8.jpg" width="300" alt="three bowls of soup and fork next to it">
+                <img src=".github/img_projects/img8.jpg" alt="three bowls of soup and fork next to it">
             </div>
             <div class="project-info">
                 <h3>The Super Bowls Branding</h3>
@@ -120,7 +141,7 @@
     <section class="projects-grid-small">
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img9.jpg" width="300" alt="Three pairs of socks in green, purple and orange colours">
+                <img src=".github/img_projects/img9.jpg" alt="Three pairs of socks in green, purple and orange colours">
             </div>
             <div class="project-info">
                 <h3>Loom Clothing Website Development</h3>
@@ -130,7 +151,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img10.jpg" width="300" alt="A bunch of orange porcelain dishes from Twyg">
+                <img src=".github/img_projects/img10.jpg" alt="A bunch of orange porcelain dishes from Twyg">
             </div>
             <div class="project-info">
                 <h3>Twyg Porcelain Website Update</h3>
@@ -140,7 +161,7 @@
         </article>
         <article class="project-item">
             <div class="project-image">
-                <img src=".github/img_projects/img11.jpg" width="300" alt="Four bowls of Crave chips with four packs of it around">
+                <img src=".github/img_projects/img11.jpg" alt="Four bowls of Crave chips with four packs of it around">
             </div>
             <div class="project-info">
                 <h3>Crave Chips Campaign</h3>
@@ -164,5 +185,4 @@
         data-hx-get="global.footer-nav.partial.html"
       ></div>
     </footer>
-</body> 
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
