@@ -3,31 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ctrl Studio</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.project-overview.css" />
   </head>
   <body>
-    <header class="header">
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-    </header>
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.header-nav.partial.html"
+    ></div>
+
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.main-hero.partial.html"
+    ></section>
+
+    <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.contact-popup.partial.html"
+    ></section>
 
     <main class="main">
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.main-hero.partial.html"
-      ></section>
-
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -57,17 +68,22 @@
         data-hx-get="index.project-overview.partial.html"
       ></section>
 
-       <section
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.our-team.partial.html"
       ></section>
 
-       <section
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.cta.partial.html"
       ></section>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.scroll-to-cta.partial.html"
+      ></div>
     </main>
 
     <footer class="footer">
@@ -77,4 +93,7 @@
         data-hx-get="global.footer-nav.partial.html"
       ></div>
     </footer>
+    <script src="js/contact-popup.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

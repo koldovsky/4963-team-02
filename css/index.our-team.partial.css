@@ -1,7 +1,124 @@
 .our-team {
-
-.our-team__banner {
     background-image: url(../img/dark-banner.svg);
-}
+    background-color: #151515;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+
+    .our-team__label {
+        margin-bottom: 1.25rem;
+        font-size: 0.6875rem;
+        font-family: var(--font-eyebrow);
+        color: var(--color-eyebrow);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .our-team__title {
+        font-size: 2.375rem;
+        width: 35vw;
+        font-family: var(--font-title);
+        color: var(--color-text-light);
+        text-transform: lowercase;
+        font-weight: 200;
+        letter-spacing: 1px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .our-team__link {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--color-text-light);
+        font-family: var(--font-title);
+        font-size: 0.875rem;
+        text-transform: lowercase;
+        font-weight: 400;
+        transition: 0.3s ease;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    .our-team__link:hover {
+        color: var(--color-eyebrow);
+    }
+
+    .our-team__cards {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .our-team__card:nth-child(2) {
+        transform: translateY(80px);
+
+        @media (max-width: 768px) {
+            transform: translateY(0);
+        }
+    }
+
+    .our-team__card-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .our-team__card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        .our-team__card-name {
+            font-size: 22px;
+            font-family: var(--font-title);
+            color: var(--color-text-light);
+            text-transform: lowercase;
+            font-weight: 200;
+            letter-spacing: 1px;
+            margin-bottom: 1.0rem;
+
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+        .our-team__card-role {
+            font-size: 16px;
+            font-family: var(--font-title);
+            color: var(--brand-color);
+            text-transform: lowercase;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+    }
 }

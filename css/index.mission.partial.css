@@ -1,0 +1,111 @@
+/* *{
+    outline: 1px solid red;
+} */
+.mission {
+  background-color: var(--background-color);
+  padding: 90px 20px;
+}
+
+.mission__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.mission__image {
+  margin: auto;
+  width: 272px;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mission__inner {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .mission__content {
+    padding: 0;
+  }
+}
+
+.mission__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.mission__subtitle {
+  font-family: var(--font-eyebrow);
+  color: var(--color-eyebrow);
+  margin-top: 60px;
+}
+
+.mission__title-main {
+  font-family: var(--font-title);
+  color: var(--color-text-light);
+  font-size: 34px;
+  margin-top: 20px;
+}
+
+.mission__description-main {
+  font-family: var(--font-secondary);
+  color: var(--color-light-gray);
+  font-size: 17px;
+}
+
+.mission__beliefs-title {
+  font-family: var(--font-secondary);
+  color: var(--color-light-gray);
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: var(--color-light-gray);
+  text-decoration-thickness: 1px;
+}
+
+.mission__beliefs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: beliefs;
+}
+
+.mission__beliefs-item {
+  counter-increment: beliefs;
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+}
+
+.mission__beliefs-item-title {
+  font-family: var(--font-title);
+  color: var(--color-text-light);
+  font-size: 22px;
+}
+
+.mission__beliefs-item::before {
+  content: counter(beliefs, decimal-leading-zero); /* 01, 02, 03 */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-secondary);
+  color: var(--tertiary-text-color);
+  font-size: 28px;
+}
+
+.mission__beliefs-item-desc {
+  font-family: var(--font-secondary);
+  color: var(--color-light-gray);
+  font-size: 14px;
+}
+
+.mission__cta-button {
+  background: var(--button-bg-color);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px 20px;
+}
+
