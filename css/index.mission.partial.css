@@ -1,12 +1,17 @@
-/* *{
-    outline: 1px solid red;
+/* * {
+  outline: 1px solid red;
 } */
 .mission {
-  background-color: var(--background-color);
-  padding: 90px 20px;
+  background-image: url(../img/dark-banner.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
 }
 
 .mission__inner {
+  margin: 0 auto;
+  padding:0 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
@@ -26,7 +31,13 @@
   }
 
   .mission__content {
-    padding: 0;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mission__image {
+    width: 400px;
   }
 }
 
@@ -35,7 +46,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 16px;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .mission__subtitle {
@@ -89,7 +100,7 @@
 .mission__beliefs-item::before {
   content: counter(beliefs, decimal-leading-zero); /* 01, 02, 03 */
   position: absolute;
-  left: 0;
+  left: -5px;
   top: 0;
   font-family: var(--font-secondary);
   color: var(--tertiary-text-color);
@@ -104,8 +115,10 @@
 
 .mission__cta-button {
   background: var(--button-bg-color);
-  border-radius: 8px;
+  color: var(--primary-text-color);
+  font-family: var(--font-secondary);
+  width: fit-content;
+  border-radius: 32px;
   cursor: pointer;
   padding: 12px 20px;
 }
-
