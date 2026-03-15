@@ -154,6 +154,8 @@
 
     .our-team__card-desc {
         font-size: 17px;
+        width: 274.66px;
+        margin: auto;
         font-family: var(--font-secondary);
         color: var(--secondary-text-color);
         margin-top: 15px;
