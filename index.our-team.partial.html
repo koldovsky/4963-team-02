@@ -5,7 +5,7 @@
 
   <header class="our-team__header">
     <h2 class="our-team__title">people behind the pixels</h2>
-    <a class="our-team__link" href="#">our projects ↗</a>
+    <a class="our-team__link" href="projects.html">our projects ↗</a>
   </header>
 
   <ul class="our-team__cards">
@@ -17,12 +17,15 @@
         src="img/our-team.partial/team-alex-novak.webp"
         alt="Alex Novak"
       />
-      <div class="our-team__card-footer">
+
+      <details class="our-team__card-footer">
+        <summary class="our-team__card-summary">
         <div class="our-team__card-info">
           <h3 class="our-team__card-name">Alex Novak</h3>
           <p class="our-team__card-role">founder & CEO</p>
         </div>
-        <button class="our-team__card-toggle">+</button>
+        <div class="our-team__card-toggle">+</div>
+        </summary>
         <div class="our-team__card-desc">
           <p>
             Drives the studio’s vision with a blend of strategy, creativity,
@@ -30,7 +33,8 @@
             building lasting partnerships.
           </p>
         </div>
-      </div>
+
+      </details>
     </li>
 
     <li class="our-team__card">
@@ -41,12 +45,14 @@
         src="img/our-team.partial/team-mason-rivera.webp"
         alt="Mason Rivera"
       />
-      <div class="our-team__card-footer">
+      <details class="our-team__card-footer">
+        <summary class="our-team__card-summary">
         <div class="our-team__card-info">
           <h3 class="our-team__card-name">Mason Rivera</h3>
           <p class="our-team__card-role">lead developer</p>
         </div>
-        <button class="our-team__card-toggle">+</button>
+        <div class="our-team__card-toggle">+</div>
+        </summary>
         <div class="our-team__card-desc">
           <p>
             Turns concepts into fast, reliable digital solutions. Specializes
@@ -54,7 +60,7 @@
             into functional, scalable products.
           </p>
         </div>
-      </div>
+      </details>
     </li>
 
     <li class="our-team__card">
@@ -65,12 +71,14 @@
         src="img/our-team.partial/team-lena-carter.webp"
         alt="Lena Carter"
       />
-      <div class="our-team__card-footer">
+      <details class="our-team__card-footer">
+        <summary class="our-team__card-summary">
         <div class="our-team__card-info">
           <h3 class="our-team__card-name">Lena Carter</h3>
           <p class="our-team__card-role">creative director</p>
         </div>
-        <button class="our-team__card-toggle">+</button>
+        <div class="our-team__card-toggle">+</div>
+        </summary>
         <div class="our-team__card-desc">
           <p>
             Shapes brand stories through impactful design. Blends design
@@ -78,10 +86,10 @@
             memorable, on-brand experiences.
           </p>
         </div>
-      </div>
+      </details>
     </li>
   </ul>
-  <button class="our-team__btn js-open-modal">Let's work</button>
+  <button class="our-team__btn js-open-modal" data-popup-open="project-brief-popup">Let's work <span>↗</span> </button>
 </section>
 
 <!-- Заготовка контейнерів для вкладення зображень партнерів css -->
