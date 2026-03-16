@@ -1,6 +1,3 @@
-/* * {
-  outline: 1px solid red;
-} */
 .mission {
   background-image: url(../img/dark-banner.svg);
   background-position: top center;
@@ -11,17 +8,11 @@
 
 .mission__inner {
   margin: 0 auto;
-  padding:0 20px;
+  padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
   align-items: start;
-}
-
-.mission__image {
-  margin: auto;
-  width: 272px;
-  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -33,6 +24,12 @@
   .mission__content {
     padding: 0 40px;
   }
+}
+
+.mission__image {
+  margin: auto;
+  width: 272px;
+  max-width: 100%;
 }
 
 @media (min-width: 1024px) {
