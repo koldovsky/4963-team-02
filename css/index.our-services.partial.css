@@ -27,8 +27,7 @@
 .services__subtitle {
   font-family: var(--font-eyebrow);
   color: var(--color-eyebrow);
-  margin-top: 60px;
-  margin: auto;
+  margin: 60px auto 0;
 }
 
 .services__title-main {
@@ -46,7 +45,6 @@
 
 .services__list {
   display: grid;
-  flex-direction: column;
   gap: 24px;
   margin-top: 40px;
 }
