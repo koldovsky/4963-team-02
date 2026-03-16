@@ -197,4 +197,25 @@
         transform: translateY(-3px);
         box-shadow: 0 10px 20px rgba(209, 58, 88, 0.4);
     }
+
+    .our-team__partners-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        @media(max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .partners-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 }
