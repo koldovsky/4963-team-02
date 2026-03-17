@@ -37,7 +37,7 @@ ul, li {
     margin: 0;
 }
 h1.project-title { 
-    font-size: 78px;
+    font-size: 56px;
     font-weight: 600;
     text-transform: lowercase;
     text-align: center;
@@ -528,12 +528,10 @@ h2.cta-title {
     }
 
     .header--open .header__socials {
-        
-        margin-bottom: 470px;
         display: flex;
         position: fixed;
         left: 50%;
-        bottom: 5.5rem;
+        top: clamp(20rem, 45vh, 26rem);
         transform: translateX(-50%);
         gap: 1.3rem;
         z-index: 1202;
