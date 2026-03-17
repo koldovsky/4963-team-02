@@ -173,7 +173,7 @@
         
         display: flex;
         width: fit-content;
-        margin: 40px auto 0;
+        margin: 40px auto 80px;
         align-items: center;
         gap: 15px;
         padding: 16px 40px;
@@ -198,7 +198,7 @@
         box-shadow: 0 10px 20px rgba(209, 58, 88, 0.4);
     }
 
-    .our-team__partners-grid {
+    .partners__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
@@ -211,11 +211,25 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .partners-item {
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .partners__item {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 40px 20px;
+            min-width: 0;
         }
-
+        .partners__item img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        opacity: 0.6;
+        transition: opacity 0.3s ease;
+        }
+        .partners__item:hover img {
+        opacity: 1; /* Подсвечиваем при наведении */
     }
-}
+    }       
