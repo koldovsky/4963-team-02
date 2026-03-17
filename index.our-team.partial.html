@@ -1,117 +1,146 @@
 <section class="our-team" id="team">
   <nav class="our-team container">
+    <p class="our-team__label">07 // our team</p>
 
-  <p class="our-team__label">07 // our team</p>
+    <header class="our-team__header">
+      <h2 class="our-team__title">people behind the pixels</h2>
+      <a class="our-team__link" href="projects.html">our projects ↗</a>
+    </header>
 
-  <header class="our-team__header">
-    <h2 class="our-team__title">people behind the pixels</h2>
-    <a class="our-team__link" href="#">our projects ↗</a>
-  </header>
+    <ul class="our-team__cards">
+      <li class="our-team__card">
+        <img
+          width="274.66"
+          height="357.06"
+          class="our-team__card-image"
+          src="img/our-team.partial/team-alex-novak.webp"
+          alt="Alex Novak"
+        />
 
-  <ul class="our-team__cards">
-    <li class="our-team__card">
-      <img
-        width="274.66"
-        height="357.06"
-        class="our-team__card-image"
-        src="img/our-team.partial/team-alex-novak.webp"
-        alt="Alex Novak"
-      />
-      <div class="our-team__card-footer">
-        <div class="our-team__card-info">
-          <h3 class="our-team__card-name">Alex Novak</h3>
-          <p class="our-team__card-role">founder & CEO</p>
-        </div>
-        <button class="our-team__card-toggle">+</button>
-        <div class="our-team__card-desc">
-          <p>
-            Drives the studio’s vision with a blend of strategy, creativity,
-            and digital thinking. Believes in clarity, bold ideas, and
-            building lasting partnerships.
-          </p>
-        </div>
-      </div>
-    </li>
+        <details class="our-team__card-footer">
+          <summary class="our-team__card-summary">
+            <div class="our-team__card-info">
+              <h3 class="our-team__card-name">Alex Novak</h3>
+              <p class="our-team__card-role">founder & CEO</p>
+            </div>
+            <div class="our-team__card-toggle">+</div>
+          </summary>
+          <div class="our-team__card-desc">
+            <p>
+              Drives the studio’s vision with a blend of strategy, creativity,
+              and digital thinking. Believes in clarity, bold ideas, and
+              building lasting partnerships.
+            </p>
+          </div>
+        </details>
+      </li>
 
-    <li class="our-team__card">
-      <img
-        width="274.66"
-        height="357.06"
-        class="our-team__card-image"
-        src="img/our-team.partial/team-mason-rivera.webp"
-        alt="Mason Rivera"
-      />
-      <div class="our-team__card-footer">
-        <div class="our-team__card-info">
-          <h3 class="our-team__card-name">Mason Rivera</h3>
-          <p class="our-team__card-role">lead developer</p>
-        </div>
-        <button class="our-team__card-toggle">+</button>
-        <div class="our-team__card-desc">
-          <p>
-            Turns concepts into fast, reliable digital solutions. Specializes
-            in clean code, efficient solutions, and turning ambitious ideas
-            into functional, scalable products.
-          </p>
-        </div>
-      </div>
-    </li>
+      <li class="our-team__card">
+        <img
+          width="274.66"
+          height="357.06"
+          class="our-team__card-image"
+          src="img/our-team.partial/team-mason-rivera.webp"
+          alt="Mason Rivera"
+        />
+        <details class="our-team__card-footer">
+          <summary class="our-team__card-summary">
+            <div class="our-team__card-info">
+              <h3 class="our-team__card-name">Mason Rivera</h3>
+              <p class="our-team__card-role">lead developer</p>
+            </div>
+            <div class="our-team__card-toggle">+</div>
+          </summary>
+          <div class="our-team__card-desc">
+            <p>
+              Turns concepts into fast, reliable digital solutions. Specializes
+              in clean code, efficient solutions, and turning ambitious ideas
+              into functional, scalable products.
+            </p>
+          </div>
+        </details>
+      </li>
 
-    <li class="our-team__card">
-      <img
-        width="274.66"
-        height="357.06"
-        class="our-team__card-image"
-        src="img/our-team.partial/team-lena-carter.webp"
-        alt="Lena Carter"
-      />
-      <div class="our-team__card-footer">
-        <div class="our-team__card-info">
-          <h3 class="our-team__card-name">Lena Carter</h3>
-          <p class="our-team__card-role">creative director</p>
-        </div>
-        <button class="our-team__card-toggle">+</button>
-        <div class="our-team__card-desc">
-          <p>
-            Shapes brand stories through impactful design. Blends design
-            expertise with a deep understanding of storytelling to create
-            memorable, on-brand experiences.
-          </p>
-        </div>
-      </div>
-    </li>
-  </ul>
-  <button class="our-team__btn js-open-modal">Let's work</button>
+      <li class="our-team__card">
+        <img
+          width="274.66"
+          height="357.06"
+          class="our-team__card-image"
+          src="img/our-team.partial/team-lena-carter.webp"
+          alt="Lena Carter"
+        />
+        <details class="our-team__card-footer">
+          <summary class="our-team__card-summary">
+            <div class="our-team__card-info">
+              <h3 class="our-team__card-name">Lena Carter</h3>
+              <p class="our-team__card-role">creative director</p>
+            </div>
+            <div class="our-team__card-toggle">+</div>
+          </summary>
+          <div class="our-team__card-desc">
+            <p>
+              Shapes brand stories through impactful design. Blends design
+              expertise with a deep understanding of storytelling to create
+              memorable, on-brand experiences.
+            </p>
+          </div>
+        </details>
+      </li>
+    </ul>
+    <button
+      class="our-team__btn js-open-modal"
+      data-popup-open="project-brief-popup"
+    >
+      Let's work <span>↗</span>
+    </button>
+  </nav>
 </section>
 
 <!-- Заготовка контейнерів для вкладення зображень партнерів css -->
 <section class="partners">
-  <ul class="partners__grid">
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--pixelpro"></div>
-    </li>
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--digital-sphere"></div>
-    </li>
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--cybertech"></div>
-    </li>
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--expo"></div>
-    </li>
+  <nav class="our-team container">
+    <ul class="partners__grid">
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--pixelpro">
+          <img src="img/our-team.partial/partners/pixelpro.svg" alt="PixelPro" />
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--digital-sphere">
+          <img src="img/our-team.partial/partners/digital-sphere.svg" alt="Digital Sphere" />
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--cybertech">
+          <img src="img/our-team.partial/partners/cybertech.svg" alt="CyberTech" />
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--expo">
+          <img src="img/our-team.partial/partners/expo.svg" alt="Expo" />
+        </div>
+      </li>
 
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--jjtech"></div>
-    </li>
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--nextgen"></div>
-    </li>
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--greenstream"></div>
-    </li>
-    <li class="partners__item">
-      <div class="partners__logo partners__logo--cowave"></div>
-    </li>
-  </ul>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--jjtech">
+          <img src="img/our-team.partial/partners/jjtech.svg" alt="JJTech" />
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--nextgen">
+          <img src="img/our-team.partial/partners/nextgen.svg" alt="NextGen" />
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--greenstream">
+          <img src="img/our-team.partial/partners/greenstream.svg" alt="GreenStream" />
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__logo partners__logo--cowave">
+          <img src="img/our-team.partial/partners/gowave.svg" alt="CoWave" />
+        </div>
+      </li>
+    </ul>
   </nav>
 </section>
