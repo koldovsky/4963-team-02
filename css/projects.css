@@ -16,6 +16,8 @@ body.body--menu-open {
 }
 
 .header__social-link svg {
+    width: 45px;
+    height: 45px;
     fill: currentColor;
 }
 
@@ -136,16 +138,37 @@ h2.cta-title {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 15px;
+    margin-bottom: 40px;
     display: block;
 }
 
+.projects.grid .project-info button {
+     font-family: 'Inter', sans-serif;
+    font-weight: 600;         
+    font-size: 15.4px;
+    padding: 11px 40px;
+    background: linear-gradient(590deg,
+      #ff6a00 -35%,
+      #ee0979 60%,
+      #ff6a00 100%);
+    background-size: 200% 100%;
+    background-position: 0 0;
+    transition: background-position 0.4s ease;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+.projects.grid .project-info button:hover {
+    background-position: 100% 0;
+}
 .project-info button {
     font-family: 'Inter', sans-serif;
     font-weight: 600;         
     font-size: 15.4px;
     display: block;
     margin-left: 0;
+     margin-bottom: 30px;
     background: transparent;
     border: none;
     color: #ffffff;
@@ -276,13 +299,21 @@ h2.cta-title {
 }
 
 @media (min-width: 768px) {
+    .header__link {
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
     .projects-footer {
         padding-left: 2rem;
         padding-right: 2rem;
     }
 
     .projects-footer__nav-link {
-        font-size: 1.55rem;
+        font-size: 17px;
+        font-weight: 400;
     }
 
     .projects.grid {
@@ -295,6 +326,13 @@ h2.cta-title {
 }
 
 @media (min-width: 1024px) {
+    .header__link {
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
     .projects-footer {
         max-width: 1400px;
         margin: 0 auto;
@@ -481,12 +519,16 @@ h2.cta-title {
     }
 
     .header--open .header__link {
-        font-size: 1.03rem;
+        text-decoration: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
         color: #ffffff;
         display: inline-block;
     }
 
     .header--open .header__socials {
+        
         margin-bottom: 470px;
         display: flex;
         position: fixed;
