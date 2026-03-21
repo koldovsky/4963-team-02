@@ -1,0 +1,166 @@
+.who-we-are {
+    background-image: url(../img/dark-banner.svg);
+  background-position: top center;
+  background-size: cover;
+  padding: 80px 0;
+  color: var(--color-text-light);
+}
+
+.who-we-are__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 260px 1fr 320px; 
+  align-items: stretch;
+  gap: 40px;
+}
+
+.who-we-are__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.who-we-are__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.who-we-are__stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.who-we-are__label {
+  font-family: var(--font-eyebrow);
+  color: var(--color-eyebrow);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.who-we-are__contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.who-we-are__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.who-we-are__tagline {
+  font-family: var(--font-secondary);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--color-light-gray);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.who-we-are__email {
+  font-family: var(--font-title);
+  font-size: 14px;
+  color: var(--color-text-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.who-we-are__email:hover {
+  color: var(--color-eyebrow);
+}
+
+.who-we-are__title {
+  font-family: var(--font-title);
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0 0 24px;
+}
+
+.who-we-are__description {
+  font-family: var(--font-secondary);
+  color: var(--color-light-gray);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 530px; 
+}
+
+.who-we-are__experience {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.who-we-are__experience-number {
+  font-family: var(--font-title);
+  font-size: 72px;
+  line-height: 1;
+  letter-spacing: -3px; 
+}
+
+.who-we-are__experience-text {
+  font-family: var(--font-secondary);
+  font-size: 15px;
+  color: var(--color-light-gray);
+  line-height: 1.4;
+}
+
+.who-we-are__stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.who-we-are__stat-number {
+  font-family: var(--font-title);
+  font-size: 46px;
+  margin: 0;
+}
+
+.stat-muted {
+  color: var(--color-dark-gray);
+}
+
+.who-we-are__stat-label {
+  font-family: var(--font-secondary);
+  font-size: 10px;
+  color: var(--color-light-gray);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  white-space: nowrap; 
+}
+
+@media (max-width: 1024px) {
+  .who-we-are__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .who-we-are__info, 
+  .who-we-are__main {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+  }
+  
+  .who-we-are__experience {
+    margin-top: 30px;
+  }
+  
+  .who-we-are__stats {
+    text-align: left;
+    gap: 30px;
+  }
+}
