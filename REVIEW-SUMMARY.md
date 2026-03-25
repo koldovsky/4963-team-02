@@ -19,10 +19,14 @@
 
 ## Findings
 
-### Critical Issues: 1
+### Critical Issues: 2
 - **Issue #57**: Invalid filename `header,js` (comma instead of dot)
   - Author: Daniello210
   - Status: Partially fixed in rename commit
+
+- **Issue #63**: BEM naming violation - inconsistent `menu-open` class
+  - Author: Daniello210
+  - Files: js/header.js vs js/projects-navbar.js
 
 ### Major Issues: 3
 - **Issue #58**: Hardcoded colors instead of CSS variables
@@ -69,6 +73,7 @@
 | 60 | Duplicate CSS Selector | shopiakkh | MAJOR | [#60](https://github.com/koldovsky/4963-team-02/issues/60) |
 | 61 | Unconventional JavaScript Filename | shopiakkh | MINOR | [#61](https://github.com/koldovsky/4963-team-02/issues/61) |
 | 62 | Code Formatting Violations | shopiakkh | MINOR | [#62](https://github.com/koldovsky/4963-team-02/issues/62) |
+| 63 | BEM Naming Violation - menu-open | Daniello210 | CRITICAL | [#63](https://github.com/koldovsky/4963-team-02/issues/63) |
 
 ---
 
@@ -113,7 +118,7 @@ Comprehensive code review report including:
 ## Review Status
 
 **✅ COMPLETE** - All violations documented and reported
-**GitHub Issues Created**: 6
+**GitHub Issues Created**: 7
 **Authors Notified**: 2 (via issue assignments)
 **Report Location**: CODE-REVIEW-REPORT.md in cursor/code-review-issues-f900 branch
 

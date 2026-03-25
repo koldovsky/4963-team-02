@@ -8,12 +8,12 @@
 
 ## Summary
 
-This code review identifies **6 distinct violations** of AGENTS.md conventions across recent commits. All issues have been documented as GitHub issues and assigned to the respective authors.
+This code review identifies **7 distinct violations** of AGENTS.md conventions across recent commits. All issues have been documented as GitHub issues and assigned to the respective authors.
 
 ### Violations by Severity:
 - **Critical**: 2 issues
 - **Major**: 3 issues  
-- **Minor**: 1 issue
+- **Minor**: 2 issues
 
 ---
 
@@ -265,13 +265,75 @@ workText.addEventListener("click", () => {
 
 ---
 
-## Compliance Summary
+### Issue #63: BEM Naming Violation - Inconsistent menu-open class
+**Author**: Daniello210
+**Commit**: a968fcb9c88f269ab39eefd677ae09173eea5594
+**Severity**: CRITICAL
+**Status**: OPEN
+
+**Violation**: CSS class naming violates BEM methodology with inconsistency between files
+
+**AGENTS.md Reference**: 
+- Section "CSS Architecture" - CSS must follow BEM methodology
+- Pattern: `.block__element--modifier`
+
+**Current Issues**:
+- `js/header.js` uses: `menu-open` (invalid BEM - missing block prefix)
+- `js/projects-navbar.js` uses: `body--menu-open` (correct BEM notation)
+
+**Code in js/header.js** (lines 11, 18):
+```javascript
+document.body.classList.toggle("menu-open");  // ✗ Wrong
+document.body.classList.remove("menu-open");  // ✗ Wrong
+```
+
+**Code in js/projects-navbar.js** (correct implementation):
+```javascript
+document.body.classList.toggle("body--menu-open", isOpen);  // ✓ Correct
+```
+
+**Problem**:
+- Inconsistent BEM notation between multiple files
+- `header.js` doesn't follow established naming pattern
+- Creates confusion and maintenance issues
+- Breaks code consistency
+
+**Recommended Fix**:
+Update `js/header.js` to use proper BEM notation:
+
+```javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.getElementById("burger");
+  const nav = document.getElementById("nav-menu");
+  const links = document.querySelectorAll(".header__link");
+
+  if (!burger || !nav) return;
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    nav.classList.toggle("active");
+    document.body.classList.toggle("body--menu-open");  // ✓ Fixed
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.remove("active");
+      nav.classList.remove("active");
+      document.body.classList.remove("body--menu-open");  // ✓ Fixed
+    });
+  });
+});
+```
+
+**Impact**: Ensures consistency with existing codebase (projects-navbar.js already uses correct notation)
+
+---
 
 ### AGENTS.md Sections Referenced:
 1. ✓ File Naming Rules - **2 violations found**
-2. ✓ CSS Variables - **1 violation found**
-3. ✓ Minimal JavaScript - **2 violations found**
-4. ✓ Code Formatting - **2 violations found**
+2. ✓ CSS Architecture (BEM) - **1 violation found**
+3. ✓ CSS Variables - **1 violation found**
+4. ✓ Minimal JavaScript - **2 violations found**
+5. ✓ Code Formatting - **2 violations found**
 
 ### Project Structure Compliance:
 - ✓ JavaScript files in `js/` directory - PASS
@@ -294,6 +356,7 @@ All issues have been created and assigned to respective authors:
 | #60 | Duplicate CSS Selector | shopiakkh | MAJOR |
 | #61 | Unconventional JavaScript Filename | shopiakkh | MINOR |
 | #62 | Code Formatting Violations in JavaScript | shopiakkh | MINOR |
+| #63 | BEM Naming Violation - Inconsistent menu-open | Daniello210 | CRITICAL |
 
 ---
 
@@ -324,7 +387,7 @@ All issues have been created and assigned to respective authors:
 ## Review Completion
 
 **Review Status**: ✓ COMPLETE
-**Total Issues Found**: 6
+**Total Issues Found**: 7
 **Total Commits Reviewed**: 5
 **Reviewers**: Code Review Automation
 **Date**: March 25, 2026
