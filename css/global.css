@@ -58,3 +58,7 @@ img {
 .hero {
   padding-top: 90px;
 }
+
+body.menu-open {
+  overflow: hidden;
+}
