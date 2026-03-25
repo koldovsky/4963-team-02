@@ -3,7 +3,8 @@
 **Commit:** 369eab39947beea554af84825375e6fd171cdf52  
 **Author:** Daniello210  
 **Date:** Wed Mar 25 16:09:23 2026 +0100  
-**File Modified:** css/global.css
+**File Modified:** css/global.css  
+**GitHub Issue:** [#63 - BEM Naming Violation: Inconsistent menu-open class naming](https://github.com/koldovsky/4963-team-02/issues/63)
 
 ---
 
