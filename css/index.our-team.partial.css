@@ -83,6 +83,7 @@
         height: auto;
         display: block;
         margin: 0 auto;
+        object-fit: cover;
     }
 
     .our-team__card-footer {
