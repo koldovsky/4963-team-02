@@ -1,3 +1,5 @@
+/* ================= HEADER ================= */
+
 .header {
   position: fixed;
   top: 0;
@@ -26,12 +28,85 @@
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  
+}
+
+/* ================= BURGER ================= */
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.header__burger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text-light);
+  transition: 0.3s;
 }
 
 
+
+.header__burger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.header__burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ================= NAV (MOBILE) ================= */
+
+.header__nav {
+  position: fixed;
+  top: var(--header-height);
+  right: -100%;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background: var(--bg-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  transition: 0.3s;
+}
+
+.header__nav.active {
+  right: 0;
+}
+
 .header__menu {
-  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.header__menu li {
+  margin: 1rem 0;
+}
+
+.header__link {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.header__link:hover {
+  color: var(--accent);
 }
 
 .header__socials {
@@ -39,35 +114,45 @@
 }
 
 
+/* ================= TABLET ================= */
 
 @media (min-width: 768px) {
 
   .header__menu {
     display: flex;
-    list-style: none;
     gap: 1.5rem;
+    text-align: left;
+  }
+
+  .header__menu li {
     margin: 0;
-    padding: 0;
   }
 
   .header__link {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-  }
-
-  .header__link:hover {
-    color: var(--accent);
+    font-size: 1rem;
   }
 
 }
 
 
+/* ================= DESKTOP ================= */
+
 @media (min-width: 1024px) {
 
   .header__container {
     padding: 0 2rem;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__nav {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    background: transparent;
   }
 
   .header__menu {
