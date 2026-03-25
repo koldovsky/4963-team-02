@@ -1,5 +1,5 @@
 function init() {
-  import("./index.our-team.partial.js");
+  import("./index.our-team.partial.photo-animation.js");
 }
 
 const totalPartials = document.querySelectorAll(
