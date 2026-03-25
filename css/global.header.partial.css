@@ -40,6 +40,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  position: relative;
   z-index: 1100;
 }
 
@@ -47,7 +48,7 @@
   width: 25px;
   height: 3px;
   background: var(--text-light);
-  transition: 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 
