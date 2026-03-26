@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+
   const header = document.getElementById("header");
   const toggle = document.querySelector(".header__toggle");
   const navLinks = document.querySelectorAll(".header__menu .header__link");
@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.classList.remove("body--menu-open");
     }
   });
-});
+
