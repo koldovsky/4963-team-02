@@ -27,6 +27,14 @@
   font-family: var(--font-secondary);
   color: var(--color-text-light);
   font-size: 15px;
+  display: block;
+  margin-top: 50px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.services__projects--direct:hover {
+  color: var(--color-eyebrow);
 }
 
 .services__list {
@@ -93,6 +101,7 @@
 
   .services__projects--direct {
     display: block;
+    text-align: right;
   }
 }
 
