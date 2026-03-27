@@ -112,6 +112,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
     padding: 0 30px;
+    max-width: 1240px;
   }
 
   .mission__content {
@@ -136,10 +137,6 @@
 
   .mission__beliefs-item {
     grid-template-columns: 96px 1fr;
-  }
-
-  .mission__inner {
-    max-width: 1240px;
   }
 
   .mission__image {
