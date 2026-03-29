@@ -5,7 +5,7 @@
   background-image: url(../img/dark-banner.svg);
   background-position: top center;
   background-size: cover;
-  padding: 0 24px;
+  padding: 100px 24px;
 }
 
 .services__subtitle {
@@ -27,6 +27,13 @@
   font-family: var(--font-secondary);
   color: var(--color-text-light);
   font-size: 15px;
+  display: block;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.services__projects--direct:hover {
+  color: var(--color-eyebrow);
 }
 
 .services__list {
@@ -83,8 +90,7 @@
   }
 
   .services__subtitle,
-  .services__title-main,
-  .services__projects--direct {
+  .services__title-main { 
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
@@ -93,6 +99,7 @@
 
   .services__projects--direct {
     display: block;
+    text-align: right;
   }
 }
 
