@@ -1,5 +1,8 @@
 .who-we-are {
-    background-image: url(../img/dark-banner.svg);
+  background-image:
+    linear-gradient(to bottom, #151515 0%, transparent 100%),
+    url(../img/dark-banner.svg);
+
   background-position: top center;
   background-size: cover;
   padding: 80px 0;
@@ -11,7 +14,7 @@
   margin: 0 auto;
   padding: 0 15px;
   display: grid;
-  grid-template-columns: 260px 1fr 320px; 
+  grid-template-columns: 1fr;
   align-items: stretch;
   gap: 40px;
 }
@@ -20,19 +23,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 40px;
 }
 
 .who-we-are__main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 40px;
 }
 
 .who-we-are__stats {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: right;
+  text-align: left;
+  gap: 30px;
 }
 
 .who-we-are__label {
@@ -93,21 +100,21 @@
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
-  max-width: 530px; 
+  max-width: 530px;
 }
 
 .who-we-are__experience {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 48px;
+  margin-top: 30px;
 }
 
 .who-we-are__experience-number {
   font-family: var(--font-title);
-  font-size: 72px;
+  font-size: clamp(56px, 8vw, 72px);
   line-height: 1;
-  letter-spacing: -3px; 
+  letter-spacing: -3px;
 }
 
 .who-we-are__experience-text {
@@ -125,7 +132,7 @@
 
 .who-we-are__stat-number {
   font-family: var(--font-title);
-  font-size: 46px;
+  font-size: clamp(36px, 5vw, 46px);
   margin: 0;
 }
 
@@ -140,27 +147,47 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin: 0;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1025px) {
   .who-we-are__container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: 260px 1fr 320px;
   }
-  
-  .who-we-are__info, 
+
+  .who-we-are__info,
   .who-we-are__main {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 30px;
+    border-bottom: none;
+    padding-bottom: 0;
   }
-  
+
   .who-we-are__experience {
-    margin-top: 30px;
+    margin-top: 48px;
   }
-  
+
   .who-we-are__stats {
-    text-align: left;
-    gap: 30px;
+    text-align: right;
+    gap: 0;
   }
+}
+
+.counter-value {
+  display: inline-flex;
+  overflow: hidden;
+  height: 1em;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
+
+.counter-digit-column {
+  display: flex;
+  flex-direction: column;
+  transition: transform 2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.counter-char {
+  display: block;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
 }

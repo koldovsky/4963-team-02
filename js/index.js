@@ -1,6 +1,7 @@
 function init() {
   import("./index.our-team.partial.photo-animation.js");
   import("./index.section-news.partial.js");
+  import("./index.who-we-are.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
