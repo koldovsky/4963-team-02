@@ -105,6 +105,17 @@ ul, li {
     margin: auto;
 }
 
+.project-overview-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.project-info-block,
+.project-additional-info-block {
+    width: 100%;
+}
+
 .project-info-block .project-header {
     margin-top: 20px;
     font-family: 'Inter', sans-serif;
@@ -129,5 +140,49 @@ ul, li {
     font-size: 1.0625rem;
     color: #CACACA;
     font-weight: 350;
+    opacity: 0.86;
+}
+
+.project-additional-info {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .project-overview-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .project-info-block {
+        flex: 1 1 58%;
+    }
+
+    .project-additional-info-block {
+        flex: 0 1 50%;
+    }
+}
+
+.project-additional-header {
+    margin-top: 35px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+} 
+
+.project-objectives h3 {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.project-additional-info h4 {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 350;
+    color: #CACACA;
     opacity: 0.86;
 }
