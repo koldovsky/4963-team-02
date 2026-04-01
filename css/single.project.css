@@ -188,11 +188,20 @@ ul, li {
 }
 
 .project-design .project-header {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 0px;
     font-family: 'Inter', sans-serif;
     font-size: 0.7rem;
     color: #E25D1F;
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    border: 0;
+    outline: 0;
+    position: relative;
+    top: 50px;
 }
 
 .project-design-description h2 {
@@ -212,9 +221,17 @@ ul, li {
     color: #ffffff;
 }
 
-.project-feature h4,
+.project-feature h4 {
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 350;
+    color: #CACACA;
+    opacity: 0.86;
+}
+
 .design-description h4 {
-    margin-top: 10px;
+    margin-top: 0;
     font-family: 'Inter', sans-serif;
     font-size: 0.9375rem;
     font-weight: 350;
@@ -257,11 +274,13 @@ ul, li {
 
     .project-design-layout__left {
         flex: 1 1 58%;
+        margin-top: 50px;
     }
 
     .project-design-layout__right {
         flex: 0 1 50%;
         margin-left: auto;
+        margin-top: 30px;
     }
 }
 
