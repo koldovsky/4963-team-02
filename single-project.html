@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>single-project</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+        <link rel="stylesheet" href="css/global.css" />
+        <link rel="stylesheet" href="css/global.header.partial.css" />
+    <link rel="stylesheet" href="css/single.project.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    ctrl
+                </a>
+
+                <button
+                    class="header__toggle"
+                    type="button"
+                    aria-label="Open navigation"
+                    aria-controls="projects-mobile-nav"
+                    aria-expanded="false">
+
+                    <span class="header__toggle-line"></span>
+                    <span class="header__toggle-line"></span>
+                    <span class="header__toggle-line"></span>
+                </button>
+
+                <nav class="header__nav" id="projects-mobile-nav" aria-label="Primary">
+                    <ul class="header__menu">
+                        <li><a href="index.html#about" class="header__link">About us</a></li>
+                        <li><a href="index.html#services" class="header__link">Services</a></li>
+                        <li><a href="projects.html" class="header__link">Projects</a></li>
+                        <li><a href="index.html#team" class="header__link">Team</a></li>
+                        <li><a href="index.html#contact" class="header__link">Contact us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__socials">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="header__social-link">
+                        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+                            <path d="M13.6383 25H16.9133V16.0044H19.3702L19.8561 13.1936H16.9133V11.1568C16.9133 10.5002 17.3379 9.8108 17.9447 9.8108H19.6171V7H17.5674V7.0126C14.3604 7.129 13.7014 8.9864 13.6443 10.9374H13.6383V13.1936H12V16.0044H13.6383V25Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="header__social-link">
+                        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+                            <path d="M24.8319297,11.4874563 C24.6803369,10.1603684 24.3639692,9.77357894 24.1398754,9.59352174 C23.7839619,9.31343284 23.1380446,9.21340113 22.2746246,9.15338207 C20.8905163,9.06001905 18.537532,9 16,9 C13.455877,9 11.1094837,9.05335028 9.72537529,9.15338207 C8.86195533,9.21340113 8.21603808,9.31343284 7.8601245,9.59352174 C7.63603076,9.77357894 7.32625412,10.1603684 7.1680703,11.4874563 C6.94397657,13.4013973 6.94397657,17.7627818 7.1680703,19.6767227 C7.32625412,21.0038107 7.63603076,21.3906002 7.8601245,21.5706573 C8.21603808,21.8507463 8.86195533,21.950778 9.72537529,22.0107971 C11.1094837,22.1041601 13.455877,22.164179 16,22.164179 C18.544123,22.164179 20.8905163,22.1041601 22.2746246,22.0107971 C23.1380446,21.950778 23.7839619,21.8507463 24.1398754,21.5706573 C24.3639692,21.3972689 24.6737458,21.0038107 24.8319297,19.6767227 C25.0560234,17.7627818 25.0560234,13.4013973 24.8319297,11.4874563 Z M13.8249725,18.4429978 L13.8249725,12.7145125 L19.2559502,15.5754208 L13.8249725,18.4429978 Z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="header__social-link">
+                        <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+                            <path d="M23.5445333,10.2885333 C23.0796444,10.5863111 22.0122666,11.0190222 21.4858666,11.0190222 L21.4858666,11.0199111 C20.8848,10.392 20.0385777,10 19.1000888,10 C17.2773333,10 15.7992889,11.4780444 15.7992889,13.3000888 C15.7992889,13.5532445 15.8286222,13.8001778 15.8828444,14.0369778 L15.8823111,14.0369778 C13.4097777,13.9720888 10.7056,12.7328 9.07768889,10.6117333 C8.0768,12.3441778 8.94293333,14.2709334 10.0787556,14.9729778 C9.68995555,15.0023111 8.97422222,14.9281778 8.63733333,14.5994666 C8.61475555,15.7493334 9.16764444,17.2728889 11.1836444,17.8256 C10.7953778,18.0344889 10.1080889,17.9745778 9.80924444,17.9301333 C9.91413329,18.9008 11.2734222,20.1697778 12.7598222,20.1697778 C12.2300445,20.7825777 10.2368,21.8940444 8,21.5404445 C9.51911111,22.4647111 11.2896,22.9999999 13.1635555,22.9999999 C18.4888889,22.9999999 22.6245334,18.6840889 22.4019555,13.3598222 C22.4010666,13.3539556 22.4010666,13.3480889 22.4005334,13.3416889 C22.4010666,13.328 22.4019555,13.3143111 22.4019555,13.3000888 C22.4019555,13.2835556 22.4005334,13.2679111 22.4,13.2519111 C22.8847999,12.9203555 23.5352888,12.3338667 24,11.5619556 C23.7304889,11.7104 22.9219555,12.0076445 22.1696,12.0814222 C22.6524444,11.8208 23.3678222,10.9672889 23.5445333,10.2885333" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    </header>
+    <main class="single-project-container">
+        <section class="single-project-hero">
+            <h1 class="single-project-title">single project</h1>
+             <nav class="breadcrumb">
+            <a href="index.html" class="breadcrumb__link">HOME</a>
+            <span class="separator">></span>
+            <span class="current">PROJECTS</span>
+            <span class="separator">></span>
+            <span class="current">SINGLE PROJECT</span>
+        </nav>
+        </section>
+        <section class="single-project-image">
+            <article class="single-project-item">
+                <div class="project-image">
+                 <img src="img/projects/shot_website.jpg" alt="Phone screen showing the redesigned Shot Agency website">
+            </div>
+        </section>
+        <section class ="project-info-block">
+            <div class="container">
+                <article class="project-info">
+                    <header class="project-header">
+                    <span class="project-info-header"></span>
+                    <span class="project-number">01 //</span>
+                    <span class="project-label">ABOUT PROJECT</span>
+                    </header>
+
+                    <p class="project-info-description">
+                        <h2>
+                            zoom studio
+                        </h2>
+                    </p>
+                    <p class="project-main-info">
+                        <h4>
+                            We partnered with Zoom Studio, a modern conceptual <br>
+                            photo studio, to rethink their site with digital gallery. <br>
+                            The goal: create a sleek, fast, mobile-first experience <br>
+                            that not only looks beautiful, but sells better.
+
+                            We combined bold visuals with smart user flows to turn casual <br>
+                            browsing into confident purchases.
+
+
+                        </h4>
+                    </p>
+                    <p class ="project-additional-info-description">
+                         <h3>
+                            project summary
+                         </h3>
+                    </p>
+                    <p class="project-additional-info">
+                        <h4>
+                            Industry: Photography & Art <br>
+                            Year: 2025 <br>
+                            Services: UX/UI Design, Weblium Development, Performance Optimization <br>     
+                        </h4>
+                    </p>
+                    <p class ="project-objectives">
+                         <h3>
+                            objectives
+                         </h3>
+                    </p>
+                    <p class="project-objectives-info">
+                        <h4>
+                            • Improve mobile conversion rates; <br>
+                            • Refresh visual identity online; <br>
+                            • Optimize load speed and user flow. <br>  
+                        </h4>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="project-design">
+            <div class="container">
+                <article class="project-design-info">
+                    <header class="project-header">
+                    <span class="project-info-header"></span>
+                    <span class="project-number">02 //</span>
+                    <span class="project-label">DESIGN & Development</span>
+                    </header>
+                     
+                    <p class="project-design-description">
+                        <h2>
+                            design & development
+                        </h2>
+                    </p>
+
+                    <p class="project-key-features">
+                        <h3>
+                            key features:
+                        </h3>
+                    </p>
+
+                    <p class="project-feature">
+                        <h4>
+                            - dynamic photo rendering; - smooth visuals & layout.
+                        </h4>
+                    </p>
+                    
+                    <p class="design-description">
+                        <h4>
+                            We started with a full UX audit to understand user pain points and <br>
+                            friction areas. From there, we designed a clean, intuitive interface <br>
+                            with a mobile-first approach — minimal steps to get a lead, bold <br>
+                            visuals, and responsive layout. <br>
+                        </h4>
+                    </p>
+
+                    <p class="design-examples">
+                        <h3>
+                            design examples:
+                        </h3>
+                    </p>
+
+                    <p class="design-examples-info">
+                        <h4>
+                            * Wireframes & prototypes <br>
+                            * Mobile-first UI redesign <br>
+                            * Custom Weblium theme <br>
+                            * Boosted website speed <br>
+                        </h4>
+                    </p>
+
+                    <div class="project-image">
+                        <img src="img/projects/studio_moments.jpg" alt="Studio Moments project image">
+                    </div>
+                    <div class="project-image">
+                        <img src="img/projects/about_us.jpg" alt="About Us project image">
+                    </div>
+                </article>
+        </section>
+        <section class="project-results">
+            <div class="container">
+                <article class="project-results-info">
+                    <header class="project-header">
+                    <span class="project-info-header"></span>
+                    <span class="project-number">03 //</span>
+                    <span class="project-label">Results & Impact</span>
+                    </header>
+
+                    <p class="project-results-title">
+                        <h2>results that drive revenue</h2>
+                    </p>
+                    <p class="project-results-main">
+                        <h4>
+                            After launching the new site, Zoom Studio saw immediate improvements <br>
+                            across the board — from faster load times to increased bookings. It quickly <br>
+                            became a game-changer, delivering a smoother client experience, stronger <br>
+                            engagement, and a noticeable boost in project inquiries. <br>
+                        </h4>
+                    </p>
+                    <p class="project-tools-title">
+                        <h3>
+                            tools & tech:
+                        </h3>    
+                    </p>
+                    <p class="project-tools-info">
+                        Liquid   Figma   Hotjar   Google Analytics   Weblium
+                    </p>
+                    <p class="project-results-details">
+                        <h4>
+                            +42% <br>
+                            increase in mobile conversions <br>
+                            +35% <br>
+                            average session duration <br>
+                            -28% <br>
+                            bounce rate <br>  
+                            + Customer reviews praised the clean <br>
+                            layout.     
+                        </h4>
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="recent-projects">
+            <div class="container">
+                <article class="recent-projects-info">
+                    <header class="project-header">
+                    <span class="project-info-header"></span>
+                    <span class="project-number">04 //</span>
+                    <span class="project-label">Recent Projects</span>
+                    </header>
+
+                    <p class="recent-projects-title">
+                        <h2>explore our recent projects</h2>
+                    </p>
+                    <p class="all-projects-button">
+                        <a href="projects.html" class="all-projects-link">all projects</a>
+                    </p>
+                </article>
+            </div>
+        </section>   
+        <section class="recent-projects-carousel">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/projects/glowup_website.jpg" class="d-block w-100" alt="GlowUp project image">
+                    </div>
+            <div class="carousel-item">
+                <img src="img/projects/hard_seltzer.jpg" class="d-block w-100" alt="Hard Seltzer project image">
+            </div>
+            <div class="carousel-item">
+                <img src="img/projects/kiikii_app.jpg" class="d-block w-100" alt="Kiikii App project image">
+            </div>
+            <div class="carousel-item">
+                <img src="img/projects/inn_beauty.jpg" class="d-block w-100" alt="Inn Beauty project image">
+            </div>
+            <div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="contact-info">
+            <div class="container">
+                <article class="contact-info-block">
+                    <h2 class="contact-info-title">let's create something amazing together</h2>
+                    <h3 class="contact-info">email: ctrl-digital@email.com phone: +1 (234) 567 89 00</h3>
+                </article>
+            </div>
+        </section>     
+    </main>
+    <footer class="footer">
+            <div class="projects-footer">
+                <div class="projects-footer__socials-left">
+                    <a href="#" class="projects-footer__link">INSTAGRAM</a>
+                    <a href="#" class="projects-footer__link">BEHANCE</a>
+                </div>
+
+                <div class="projects-footer__copyright">© Created by</div>
+
+                <div class="projects-footer__logo">c t r l</div>
+
+                <nav class="projects-footer__nav">
+                    <a href="index.html#about" class="projects-footer__nav-link">About us</a>
+                    <a href="index.html#services" class="projects-footer__nav-link">Services</a>
+                    <a href="projects.html" class="projects-footer__nav-link">Projects</a>
+                    <a href="index.html#projects" class="projects-footer__nav-link">Clients</a>
+                    <a href="index.html#news" class="projects-footer__nav-link">News</a>
+                    <a href="index.html#contact" class="projects-footer__nav-link">Contacts</a>
+                </nav>
+
+                <div class="projects-footer__subscribe">
+                    <p class="projects-footer__subscribe-text">Subscribe to the latest news from us!</p>
+                    <form class="projects-footer__form">
+                        <input type="email" placeholder="Email*" required class="projects-footer__input" />
+                        <button type="submit" class="projects-footer__btn">subscribe</button>
+                    </form>
+                </div>
+
+                <div class="projects-footer__socials-right">
+                    <a href="#" class="projects-footer__link">TWITTER</a>
+                    <a href="#" class="projects-footer__link">YOUTUBE</a>
+                </div>
+
+                <div class="projects-footer__arrow" aria-hidden="true">↗</div>
+                <div class="projects-footer__rights">All rights Reserved</div>
+            </div>
+        </footer>
+  </body>
+</html>

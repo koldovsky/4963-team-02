@@ -1,43 +1,79 @@
 <section class="who-we-are" id="about">
-  <div class="who-we-are__container">
-
+  <div class="container who-we-are__container">
     <div class="who-we-are__info">
       <p class="who-we-are__label">01 // WHO WE ARE</p>
-      <div class="who-we-are__contact">
-        <p class="who-we-are__tagline">LET'S WORK TOGETHER!</p>
-        <a class="who-we-are__email" href="mailto:ctrl-digital@email.com">
-          ctrl-digital@email.com
-        </a>
+      <div class="who-we-are__contact-wrapper">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path
+            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+          ></path>
+        </svg>
+        <div class="who-we-are__contact">
+          <p class="who-we-are__tagline">LET'S WORK TOGETHER!</p>
+          <a class="who-we-are__email" href="mailto:ctrl-digital@email.com">
+            ctrl-digital@email.com
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="who-we-are__main">
-      <h2 class="who-we-are__title">turning ideas into impactful digital experiences</h2>
+      <h2 class="who-we-are__title">
+        turning ideas into impactful<br />digital experiences
+      </h2>
       <p class="who-we-are__description">
-        We are a creative studio specializing in design, development, and strategy 
-        to help brands grow, connect, and stand out in today's fast-paced global digital world.
+        We are a creative studio specializing in design, development, and
+        strategy to help brands grow, connect, and stand out in today's
+        fast-paced global digital world.
       </p>
+      <div class="who-we-are__experience">
+        <span
+          class="who-we-are__experience-number counter-value"
+          data-target="12"
+          >0</span
+        >
+        <span class="who-we-are__experience-text"
+          >Years<br />Of Experience</span
+        >
+      </div>
     </div>
-    
-    <div class="who-we-are__metrics">
-      <ul class="metrics__list">
-        <li class="metrics__item">
-          <h3 class="metrics__number">12</h3>
-          <p class="metrics__description">Years Of Experience</p>
-        </li>
-        <li class="metrics__item">
-          <h3 class="metrics__number">1.5K</h3>
-          <p class="metrics__description">PROJECTS SUCCESSFULLY DELIVERED</p>
-        </li>
-        <li class="metrics__item">
-          <h3 class="metrics__number">66,587</h3>
-          <p class="metrics__description">HOURS CRAFTING DIGITAL SOLUTIONS</p>
-        </li>
-        <li class="metrics__item">
-          <h3 class="metrics__number">100%</h3>
-          <p class="metrics__description">CLIENT SATISFACTION FOCUS</p>
-        </li>
-      </ul>
+
+    <div class="who-we-are__stats">
+      <div class="who-we-are__stat-item">
+        <h3 class="who-we-are__stat-number">
+          <span class="counter-value" data-target="1.5" data-decimals="1"
+            >0</span
+          ><span class="stat-muted">K</span>
+        </h3>
+        <p class="who-we-are__stat-label">PROJECTS SUCCESSFULLY DELIVERED</p>
+      </div>
+      <div class="who-we-are__stat-item">
+        <h3 class="who-we-are__stat-number">
+          <span class="counter-value" data-target="66587" data-comma="true"
+            >0</span
+          >
+        </h3>
+        <p class="who-we-are__stat-label">HOURS CRAFTING DIGITAL SOLUTIONS</p>
+      </div>
+      <div class="who-we-are__stat-item">
+        <h3 class="who-we-are__stat-number">
+          <span class="counter-value" data-target="100">0</span
+          ><span class="stat-muted">%</span>
+        </h3>
+        <p class="who-we-are__stat-label">CLIENT SATISFACTION FOCUS</p>
+      </div>
     </div>
   </div>
 </section>

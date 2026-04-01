@@ -79,6 +79,11 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.cta.partial.html"
       ></section>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.scroll-to-cta.partial.html"
+      ></div>
     </main>
 
     <footer class="footer">
@@ -88,23 +93,9 @@
         data-hx-get="global.footer-nav.partial.html"
       ></div>
     </footer>
-
     <script src="js/contact-popup.js"></script>
-
-    <script>
-      const scrollToHashTarget = () => {
-        if (!window.location.hash) return;
-        const target = document.querySelector(window.location.hash);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      };
-
-      window.addEventListener("hashchange", scrollToHashTarget);
-      document.addEventListener("htmx:afterSwap", () => {
-        setTimeout(scrollToHashTarget, 0);
-      });
-      window.addEventListener("load", scrollToHashTarget);
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
