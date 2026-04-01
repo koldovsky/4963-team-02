@@ -226,10 +226,9 @@
   }
 }
 .news__subtitle--item {
-
   font-weight: bold;
-  cursor: pointer; 
-  animation: pulse 1s infinite; 
+  cursor: pointer;
+  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
@@ -238,8 +237,8 @@
     opacity: 1;
   }
   50% {
-    transform: scale(1.1); 
-    opacity: 0.8; 
+    transform: scale(1.1);
+    opacity: 0.8;
   }
   100% {
     transform: scale(1);
