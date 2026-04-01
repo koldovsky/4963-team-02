@@ -81,7 +81,7 @@ ul, li {
 .single-project-hero .breadcrumb .separator,
 .single-project-hero .breadcrumb .current {
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.86);
+    color: #ffffff;
     line-height: 1;
 }
 
@@ -96,4 +96,38 @@ ul, li {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
+}
+
+.single-project-image {
+    width: 1170px;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+.project-info-block .project-header {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    color: #E25D1F;
+    font-weight: 600;
+    
+}
+
+
+.project-info-description h2 {
+    margin-top: 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+.project-main-info h4 {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    color: #CACACA;
+    font-weight: 350;
+    opacity: 0.86;
 }
