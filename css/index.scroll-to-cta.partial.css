@@ -1,6 +1,6 @@
 .scroll-to-cta {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
@@ -26,6 +26,14 @@
   transition: transform 0.3s ease;
 }
 
+.scroll-to-cta--top svg {
+  transform: rotate(180deg);
+}
+
 .scroll-to-cta:hover svg {
   transform: translateY(2px);
+}
+
+.scroll-to-cta--top:hover svg {
+  transform: rotate(180deg) translateY(-2px);
 }
