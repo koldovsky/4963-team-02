@@ -16,7 +16,7 @@
   justify-content: center;
   font-size: 18px;
   font-family: var(--font-primary);
-  background:  var( --background-color) ;
+  background: linear-gradient(180deg, var(--flag-bg, rgba(255, 255, 255, 0.18)) 0%, rgba(255, 255, 255, 0.08) 100%), var(--background-color);
   color: var(--primary-text-color);
   background-size: 400% 400%;
   border: solid 2px var(--light-accent-color);
@@ -36,6 +36,12 @@
     transform: translateX(-50%) scale(0.8);
     filter: blur(8px);
     transition: transform 0.4s ease;
+    z-index: 1;
+  }
+
+  .index-cta__button-text {
+    position: relative;
+    z-index: 2;
   }
 
   &:hover {

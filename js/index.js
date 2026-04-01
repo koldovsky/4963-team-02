@@ -2,6 +2,8 @@ function init() {
   import("./index.our-team.partial.photo-animation.js");
   import("./index.section-news.partial.js");
   import("./index.who-we-are.partial.js");
+  import("./index.cta.partial.js");
+  import("./index.scroll-to-cta.partial.js");
 }
 
 const totalPartials = document.querySelectorAll(
