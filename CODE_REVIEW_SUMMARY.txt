@@ -1,0 +1,107 @@
+================================================================================
+CODE REVIEW REPORT - COMMIT badc23b
+================================================================================
+
+Date: April 1, 2026
+Repository: https://github.com/koldovsky/4963-team-02
+Commit: badc23b3f7da03aee41f06a6f1caa5d4b9f2d68d
+Message: added css
+Author: mkssymh (maxhladiak@gmail.com)
+Standards: AGENTS.md
+
+================================================================================
+REVIEW SUMMARY
+================================================================================
+
+Total Issues Found: 4
+Critical Issues: 2
+Medium Issues: 1
+Low Issues: 1
+
+All issues violate specific rules outlined in AGENTS.md (project architecture
+and coding standards document).
+
+================================================================================
+GITHUB ISSUES CREATED
+================================================================================
+
+Issue #155: CSS Code Review: Hardcoded colors must use CSS variables
+  - Severity: CRITICAL
+  - Category: Architecture
+  - Violation: AGENTS.md lines 237-260 (CSS Variables rule)
+  - Description: CSS contains hardcoded color values instead of CSS variables
+  - Files: css/single.project.css
+  - Status: OPEN
+
+Issue #156: HTML Code Review: Semantic HTML violation - <p> tags misused for layout
+  - Severity: CRITICAL
+  - Category: Semantics & Accessibility
+  - Violation: AGENTS.md lines 341-346 (Semantic HTML rule)
+  - Description: <p> tags used for layout instead of headings and divs
+  - Files: single-project.html
+  - Status: OPEN
+
+Issue #157: CSS Code Review: Inconsistent BEM naming convention
+  - Severity: MEDIUM
+  - Category: Code Quality
+  - Violation: AGENTS.md lines 201-233 (BEM CSS Architecture)
+  - Description: CSS selectors don't follow BEM naming methodology
+  - Files: css/single.project.css, single-project.html
+  - Status: OPEN
+
+Issue #158: Code Review: HTML formatting - inconsistent indentation and spacing
+  - Severity: LOW
+  - Category: Code Formatting
+  - Violation: AGENTS.md lines 379-395 (Code Formatting)
+  - Description: Inconsistent indentation and attribute spacing
+  - Files: single-project.html
+  - Status: OPEN
+
+================================================================================
+FILES MODIFIED IN COMMIT
+================================================================================
+
+1. css/single.project.css
+   - Added 143 lines of CSS
+   - Issues: Hardcoded colors, inconsistent BEM naming
+
+2. single-project.html
+   - Modified sections: ~150 lines changed
+   - Issues: Semantic HTML violations, formatting issues, BEM naming
+
+================================================================================
+ACTIONS TAKEN
+================================================================================
+
+✓ Created comprehensive code review document (CODE_REVIEW.md)
+✓ Created 4 GitHub issues with detailed descriptions and required fixes
+✓ Issues tracked in cursor/code-review-issues-2c8f branch
+✓ Code review report committed and pushed to remote
+
+================================================================================
+REQUIRED FIXES BY DEVELOPER (mkssymh)
+================================================================================
+
+CRITICAL (Must fix before merge):
+  1. Define all colors as CSS variables in :root
+  2. Replace all hardcoded color values with variable references
+  3. Replace <p> tags used for layout with <div> elements
+
+MEDIUM (Should fix before merge):
+  4. Refactor CSS selectors to follow strict BEM naming
+  5. Update HTML class names to match BEM convention
+
+LOW (Nice to have):
+  6. Format HTML with Prettier (2-space indent, no spaces in attributes)
+
+================================================================================
+REFERENCE
+================================================================================
+
+- Full Code Review: /workspace/CODE_REVIEW.md
+- Commit Details: https://github.com/koldovsky/4963-team-02/commit/badc23b
+- AGENTS.md: /workspace/AGENTS.md
+- Issue Tracker: https://github.com/koldovsky/4963-team-02/issues
+
+Review Date: April 1, 2026
+Reviewed By: Cursor Automation (Code Review Agent)
