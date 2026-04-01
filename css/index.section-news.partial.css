@@ -19,10 +19,14 @@
   }
 }
 .news__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   margin: 0 auto;
-  padding: 0 15px;
 
   @media (min-width: 768px) {
+    align-items: flex-end;
     margin: 0;
     text-wrap: auto;
     flex: 1;
@@ -111,6 +115,7 @@
   width: 100%;
   max-width: 508px;
   height: auto;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   flex-shrink: 0;
