@@ -78,8 +78,9 @@
         <section class="single-project-image">
             <article class="single-project-item">
                 <div class="project-image">
-                 <img src="img/projects/shot_website.jpg" alt="Phone screen showing the redesigned Shot Agency website">
-            </div>
+                    <img src="img/projects/shot_website.jpg" alt="Phone screen showing the redesigned Shot Agency website">
+                </div>
+            </article>
         </section>
         <div class="project-overview-layout container">
         <section class ="project-info-block">
@@ -209,46 +210,55 @@
                         </div>
         </section>
         <section class="project-results">
-            <div class="container">
-                <article class="project-results-info">
+            <div class="container project-results__grid">
+                <article class="project-results__content">
                     <header class="project-header">
-                    <span class="project-info-header"></span>
-                    <span class="project-number">03 //</span>
-                    <span class="project-label">Results & Impact</span>
+                        <span class="project-info-header"></span>
+                        <span class="project-number">03 //</span>
+                        <span class="project-label">results & impact</span>
                     </header>
 
                     <div class="project-results-title">
                         <h2>results that drive revenue</h2>
                     </div>
-                    <div class="project-results-main">
-                        <h4>
-                            After launching the new site, Zoom Studio saw immediate improvements <br>
-                            across the board — from faster load times to increased bookings. It quickly <br>
-                            became a game-changer, delivering a smoother client experience, stronger <br>
-                            engagement, and a noticeable boost in project inquiries. <br>
-                        </h4>
-                    </div>
+
+                    <p class="project-results-main">
+                        After launching the new site, Zoom Studio saw immediate improvements across the board from faster load
+                        times to increased bookings. It quickly became a game-changer, delivering a smoother client
+                        experience, stronger engagement, and a noticeable boost in project inquiries.
+                    </p>
+
                     <div class="project-tools-title">
-                        <h3>
-                            tools & tech:
-                        </h3>    
+                        <h3>tools & tech:</h3>
                     </div>
-                    <div class="project-tools-info">
-                        Liquid   Figma   Hotjar   Google Analytics   Weblium
-                    </div>
-                    <div class="project-results-details">
-                        <h4>
-                            +42% <br>
-                            increase in mobile conversions <br>
-                            +35% <br>
-                            average session duration <br>
-                            -28% <br>
-                            bounce rate <br>  
-                            + Customer reviews praised the clean <br>
-                            layout.     
-                        </h4>
-                    </div>
+
+                    <ul class="project-tools-list" aria-label="Tools used in project">
+                        <li class="project-tools-list__item">Liquid</li>
+                        <li class="project-tools-list__item">Figma</li>
+                        <li class="project-tools-list__item">Hotjar</li>
+                        <li class="project-tools-list__item">Google Analytics</li>
+                        <li class="project-tools-list__item">Weblium</li>
+                    </ul>
                 </article>
+
+                <aside class="project-results__stats" aria-label="Project results metrics">
+                    <div class="project-results__metric">
+                        <p class="project-results__value">+42<span>%</span></p>
+                        <p class="project-results__caption">increase in mobile conversions</p>
+                    </div>
+
+                    <div class="project-results__metric">
+                        <p class="project-results__value">+35<span>%</span></p>
+                        <p class="project-results__caption">average session duration</p>
+                    </div>
+
+                    <div class="project-results__metric">
+                        <p class="project-results__value">-28<span>%</span></p>
+                        <p class="project-results__caption">bounce rate</p>
+                    </div>
+
+                    <p class="project-results__note">+ Customer reviews praised the clean layout.</p>
+                </aside>
             </div>
         </section>
         <section class="recent-projects">
@@ -270,28 +280,45 @@
             </div>
         </section>   
         <section class="recent-projects-carousel">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/projects/glowup_website.jpg" class="d-block w-100" alt="GlowUp project image">
-                    </div>
-            <div class="carousel-item">
-                <img src="img/projects/hard_seltzer.jpg" class="d-block w-100" alt="Hard Seltzer project image">
-            </div>
-            <div class="carousel-item">
-                <img src="img/projects/kiikii_app.jpg" class="d-block w-100" alt="Kiikii App project image">
-            </div>
-            <div class="carousel-item">
-                <img src="img/projects/inn_beauty.jpg" class="d-block w-100" alt="Inn Beauty project image">
-            </div>
-            <div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+            <div class="recent-projects-carousel__viewport" data-recent-projects-carousel>
+                <button class="recent-projects-carousel__control recent-projects-carousel__control--prev" type="button" aria-label="Previous recent projects" data-carousel-prev>
+                    <span class="recent-projects-carousel__arrow" aria-hidden="true">&#8249;</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+
+                <div class="recent-projects-carousel__window">
+                    <div class="recent-projects-carousel__track" data-carousel-track>
+                        <article class="recent-projects-card">
+                            <img src="img/projects/glowup_website.jpg" alt="GlowUp Website Redesign preview" class="recent-projects-card__image">
+                            <h3 class="recent-projects-card__title">GlowUp Website Redesign</h3>
+                            <p class="recent-projects-card__category">Glow Media</p>
+                            <a href="single-project.html" class="recent-projects-card__link">learn more</a>
+                        </article>
+
+                        <article class="recent-projects-card">
+                            <img src="img/projects/kiikii_app.jpg" alt="Kiikii App UI UX preview" class="recent-projects-card__image">
+                            <h3 class="recent-projects-card__title">Kiikii App UI/UX</h3>
+                            <p class="recent-projects-card__category">Kiikii Japan</p>
+                            <a href="single-project.html" class="recent-projects-card__link">learn more</a>
+                        </article>
+
+                        <article class="recent-projects-card">
+                            <img src="img/projects/inn_beauty.jpg" alt="Inn Beauty Website Design preview" class="recent-projects-card__image">
+                            <h3 class="recent-projects-card__title">Inn Beauty Website Design</h3>
+                            <p class="recent-projects-card__category">Inn Beauty</p>
+                            <a href="single-project.html" class="recent-projects-card__link">learn more</a>
+                        </article>
+
+                        <article class="recent-projects-card">
+                            <img src="img/projects/before_toothpaste.jpg" alt="Before Toothpaste Website Redesign preview" class="recent-projects-card__image">
+                            <h3 class="recent-projects-card__title">Before Toothpaste Website Redesign</h3>
+                            <p class="recent-projects-card__category">Before</p>
+                            <a href="single-project.html" class="recent-projects-card__link">learn more</a>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="recent-projects-carousel__control recent-projects-carousel__control--next" type="button" aria-label="Next recent projects" data-carousel-next>
+                    <span class="recent-projects-carousel__arrow" aria-hidden="true">&#8250;</span>
                 </button>
             </div>
         </section>
@@ -299,7 +326,12 @@
             <div class="container">
                 <article class="contact-info-block">
                     <h2 class="contact-info-title">let's create something amazing together</h2>
-                    <h3 class="contact-info">email: ctrl-digital@email.com phone: +1 (234) 567 89 00</h3>
+                    <h3 class="contact-info">
+                        <span>email:</span>
+                        <a href="mailto:ctrl-digital@email.com" class="contact-info__link">ctrl-digital@email.com</a>
+                        <span>phone:</span>
+                        <a href="tel:+12345678900" class="contact-info__link">+1 (234) 567 89 00</a>
+                    </h3>
                 </article>
             </div>
         </section>     
@@ -341,5 +373,7 @@
                 <div class="projects-footer__rights">All rights Reserved</div>
             </div>
         </footer>
-  </body>
+                <script src="js/projects-navbar.js"></script>
+                <script src="js/single-project-carousel.js"></script>
+    </body>
 </html>
